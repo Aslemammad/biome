@@ -54,9 +54,7 @@ jobs:
 
       - name: Publish
         working-directory: packages/@biomejs/wasm-web
-        run: pnpx pkg-pr-new@https://116e6ce9.stackblitz-cr.pages.dev/stackblitz-labs/pkg.pr.new/pkg-pr-new@96 publish
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpx pkg-pr-new@https://7e63292a.stackblitz-cr.pages.dev/stackblitz-labs/pkg.pr.new/pkg-pr-new@96 publish
 
   repository-dispatch:
     name: Repository dispatch
