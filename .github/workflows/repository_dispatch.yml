@@ -54,7 +54,7 @@ jobs:
 
       - name: Publish
         working-directory: packages/@biomejs/wasm-web
-        run: pnpx pkg-pr-new publish
+        run: pnpm pkg-pr-new publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

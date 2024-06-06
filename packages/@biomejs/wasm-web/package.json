@@ -26,5 +26,8 @@
     "linter",
     "formatter",
     "wasm"
-  ]
+  ],
+  "dependencies": {
+    "pkg-pr-new": "https://e48139af.stackblitz-cr.pages.dev/stackblitz-labs/pkg.pr.new/pkg-pr-new@c898f6e"
+  }
 }
