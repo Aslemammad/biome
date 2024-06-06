@@ -53,6 +53,7 @@ jobs:
         run: npm pkg set name='@biomejs/wasm-web'
 
       - name: Install
+        working-directory: packages/@biomejs/wasm-web
         run: pnpm install
 
       - name: Publish
