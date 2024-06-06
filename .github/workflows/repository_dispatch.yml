@@ -52,13 +52,9 @@ jobs:
         working-directory: packages/@biomejs/wasm-web
         run: npm pkg set name='@biomejs/wasm-web'
 
-      - name: Install
-        working-directory: packages/@biomejs/wasm-web
-        run: pnpm install
-
       - name: Publish
         working-directory: packages/@biomejs/wasm-web
-        run: pnpm pkg-pr-new publish
+        run: pnpx pkg-pr-new@https://e48139af.stackblitz-cr.pages.dev/stackblitz-labs/pkg.pr.new/pkg-pr-new@c898f6e publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
